@@ -1,0 +1,31 @@
+body {
+    margin: 0;
+    box-sizing: border-box;
+    color: rgb(34, 33, 33);
+}
+.expression-display {
+    width: 560px;
+    height: 15px;
+    background: rgb(247, 126, 126);
+}
+.input-display {
+    width: 560px;
+    height: 50px;
+    background: rgb(102, 102, 241);
+}
+.label-container {
+    width: 80px;
+    height: 40px;
+    border: 0.3px solid rgb(224, 223, 223);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(211, 209, 209);
+}
+.operand {
+    background: rgb(241, 240, 240);
+}
+.equal-sign {
+    background: rgb(37, 144, 243);
+    color: #fff;
+}
