@@ -2,30 +2,79 @@ body {
     margin: 0;
     box-sizing: border-box;
     color: rgb(34, 33, 33);
+    box-sizing: border-box;
+    font-size: 0.8em;
+}
+.container {
+    max-width: 360px;
+    height: 300px;
+    margin: 20px auto;
+    padding: 10px;
+    border-radius: 4px;
+    box-shadow: 1px 1px 1px 1px rgb(218, 218, 218), -1px -1px 1px 1px rgb(218, 218, 218);
+    display: flex;
+    flex-direction: column;
+}
+.expression-display, .input-display {
+    max-width: 100%;
+    background: #eee;
+    margin: 0px 0px 10px 0px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
 .expression-display {
-    width: 560px;
-    height: 15px;
-    background: rgb(247, 126, 126);
+    flex: 0 1 20px; 
 }
 .input-display {
-    width: 560px;
-    height: 50px;
-    background: rgb(102, 102, 241);
+    flex: 0 1 40px;
+}
+.inputs-container {
+    width: 100%;
+    flex: 1 1 240px;
+    display: flex;
+    justify-content: space-between;
+}
+.inputs-group1, .inputs-group2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.inputs-group1 {
+    display: none;
+}
+.inputs-group2 {
+    flex: 2;
+}
+.group1-block, .group2-block {
+    display: flex;
+    justify-content: space-between;
 }
 .label-container {
-    width: 80px;
-    height: 40px;
-    border: 0.3px solid rgb(224, 223, 223);
+    /* flex: 1; */
+    flex: 0 1 23%;
+    background: rgb(134, 187, 240);
     display: flex;
     justify-content: center;
     align-items: center;
-    background: rgb(211, 209, 209);
+    height: 38px;
 }
-.operand {
-    background: rgb(241, 240, 240);
-}
-.equal-sign {
-    background: rgb(37, 144, 243);
-    color: #fff;
+
+/* Lanscape, tablets and desktops*/
+@media screen and (min-width: 400px) {
+    .container {
+        max-width: 600px;
+    }
+    .inputs-group1 {
+        display: flex;
+        flex: 1 1 42.85%;
+        padding-right: 5px;
+    }
+    .inputs-group2 {
+        flex: 1 1 57.15%;
+        padding-left: 5px;
+    }
+    .inputs-group1 .label-container {
+        flex: 0 1 31%;
+    }
 }
