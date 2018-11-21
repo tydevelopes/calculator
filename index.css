@@ -61,7 +61,7 @@ body {
 }
 
 /* Lanscape, tablets and desktops*/
-@media screen and (min-width: 400px) {
+@media screen and (min-width: 420px) {
     .container {
         max-width: 600px;
     }
